@@ -171,7 +171,7 @@ public final class WorldUtil {
                     name,
                     getGameType(GameMode.SURVIVAL),
                     hardcore,
-                    Difficulty.EASY,
+                    Difficulty.HARD,
                     false,
                     new GameRules(context.dataConfiguration().enabledFeatures()),
                     context.dataConfiguration()
