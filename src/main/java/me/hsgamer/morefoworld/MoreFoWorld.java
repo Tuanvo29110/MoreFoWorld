@@ -9,7 +9,6 @@ import me.hsgamer.morefoworld.command.MainCommand;
 import me.hsgamer.morefoworld.config.*;
 import me.hsgamer.morefoworld.config.object.Position;
 import me.hsgamer.morefoworld.listener.PortalListener;
-import me.hsgamer.morefoworld.listener.SpawnListener;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.WorldCreator;
@@ -28,7 +27,6 @@ public final class MoreFoWorld extends BasePlugin {
                 ConfigGenerator.newInstance(WorldSpawnConfig.class, new BukkitConfig(this, "world-spawn.yml")),
                 new DebugComponent(this),
                 new PortalListener(this),
-                new SpawnListener(this),
                 new CommandComponent(this, () -> List.of(new MainCommand(this)))
         );
     }
